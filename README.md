@@ -1,0 +1,17 @@
+
+# Weahter App UI
+
+Weather UI design I made for KeKod Android development competition.
+## Screenshots
+
+<kbd>
+  <img src="https://i.imgur.com/OJuTdpH.png">
+</kbd>
+
+
+## Quick test on your device
+
+  [download APK](https://github.com/mergencdev/KeKodWeatherUI/raw/main/app-debug.apk)
+## Appendices
+
+Feel free to use it by citing the source. :raised_hands: :nerd_face:
