@@ -9,8 +9,8 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
-        android:layout_height="175dp"
-        android:layout_marginStart="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="75dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="sans-serif-condensed-light"
             android:text="@string/date"
             android:textSize="20sp" />
@@ -35,7 +35,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="@string/partly_cloudy"
@@ -49,14 +49,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="20dp"
         app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="175dp"
-            android:layout_height="175dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:contentDescription="@string/location_image"
             android:src="@drawable/istanbul" />
 
@@ -76,9 +76,8 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <TextView
@@ -137,45 +136,31 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewDegree"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="160dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        android:layout_height="160dp"
         android:layout_marginStart="20dp"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:fontFamily="sans-serif-condensed"
-                android:text="30 °C"
-                android:textSize="50sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed-light"
-                android:text="Clear"
-                android:textSize="25sp" />
-
-        </LinearLayout>
-
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="30 °C"
+            android:textSize="50sp" />
 
     </androidx.cardview.widget.CardView>
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewInfo"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_marginRight="20dp"
         app:cardCornerRadius="30dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView2"
@@ -235,27 +220,27 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:src="@drawable/precipitation" />
+                    android:src="@drawable/precipitation"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:src="@drawable/humidity" />
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/humidity"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/wind" />
+                    android:src="@drawable/wind"/>
 
             </LinearLayout>
 
@@ -263,5 +248,6 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
